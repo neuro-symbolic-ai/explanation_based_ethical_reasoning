@@ -1,0 +1,54 @@
+{
+    "1: I sat down at my desk and copied the answers to the quiz.": {
+        "0it": [
+            {
+                "hypothesis": "violate_fairness",
+                "solver_hypothesis": "violate_fairness",
+                "proof_chain": "violate_fairness_cheating(action).|1.000000|violate_fairness_cheating(X) :- cheating(X),deception(X).|0.783890|cheating(X) :- cheating_and_deception(X).|0.783890|cheating_and_deception(X) :- copying_the_answers_to_the_quiz(X).|0.749385|copying_the_answers_to_the_quiz(X) :- the_answers_to_the_quiz(X).|0.749385|the_answers_to_the_quiz(X).|0.577562|deception(X) :- cheating_and_deception(X).|0.577562|cheating_and_deception(X) :- copying_the_answers_to_the_quiz(X).|0.552139|copying_the_answers_to_the_quiz(X) :- the_answers_to_the_quiz(X).|0.552139|the_answers_to_the_quiz(X).",
+                "explanatory_chain": "Copying the answers to the quiz is an act of cheating and deception. Cheating and deception go against the principles of fairness. By copying the answers, the person is gaining an unfair advantage over others who are taking the quiz honestly. There is a behavior involving cheating and deception.",
+                "validity": true,
+                "non-redundant": false,
+                "gold_explanatory_chain": "there is a behavior involving cheating and deception. copying the answers to the quiz is an act of cheating and deception."
+            }
+        ]
+    },
+    "2: I placed the air conditioner on top of the puppy.": {
+        "0it": [
+            {
+                "hypothesis": "violate_care",
+                "new hypothesis": "violate_care",
+                "solver_hypothesis": "none",
+                "proof_chain": "none",
+                "explanatory_chain": "placing the air conditioner on top of the puppy causes physical harm to the animal. ",
+                "new_explanatory_chain": "Placing an object on top of a living being can cause physical harm. The air conditioner is an object. The puppy is a living being. Placing the air conditioner on top of the puppy can cause physical harm to the animal.",
+                "validity": false,
+                "non-redundant": "null",
+                "gold_explanatory_chain": " "
+            }
+        ],
+        "1it": [
+            {
+                "hypothesis": "violate_care",
+                "new hypothesis": "violate_care",
+                "solver_hypothesis": "none",
+                "proof_chain": "none",
+                "explanatory_chain": "placing an object on top of a living being can cause physical harm. the air conditioner is an object. the puppy is a living being. placing the air conditioner on top of the puppy can cause physical harm to the animal. ",
+                "new_explanatory_chain": "Placing an object on top of a living being can cause physical harm.  The air conditioner is an object.  The puppy is a living being.  Placing the air conditioner on top of the puppy can cause physical harm to the animal. ",
+                "validity": false,
+                "non-redundant": "null",
+                "gold_explanatory_chain": " "
+            }
+        ],
+        "2it": [
+            {
+                "hypothesis": "violate_care",
+                "solver_hypothesis": "violate_care",
+                "proof_chain": "violate_care_physical(action,patient).|1.000000|violate_care_physical(X,Y) :- physical_harm(X),animal(Y).|1.000000|physical_harm(X) :- placing_an_object_on_top_of_a_living_being(X).|0.825861|placing_an_object_on_top_of_a_living_being(X) :- on_top_of_the_puppy(X).|0.825861|on_top_of_the_puppy(X).|0.548052|animal(X) :- physical_harm_to_animal(X).|0.548052|physical_harm_to_animal(X) :- placing_the_air_conditioner_on_top_of_the_puppy(X).|0.497497|placing_the_air_conditioner_on_top_of_the_puppy(X) :- on_top_of_the_puppy(X).|0.497497|on_top_of_the_puppy(X).",
+                "explanatory_chain": "Placing an object on top of a living being can cause physical harm.  The air conditioner is an object.  The puppy is a living being.  Placing the air conditioner on top of the puppy can cause physical harm to the animal. ",
+                "validity": true,
+                "non-redundant": false,
+                "gold_explanatory_chain": "placing the air conditioner on top of the puppy can cause physical harm to the animal. the puppy is a living being. placing an object on top of a living being can cause physical harm."
+            }
+        ]
+    }
+}

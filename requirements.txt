@@ -1,0 +1,9 @@
+tqdm
+openai
+backoff
+tenacity
+copy
+pandas
+scipy
+gensim
+graphviz

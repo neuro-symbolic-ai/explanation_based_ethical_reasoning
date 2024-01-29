@@ -1,0 +1,4 @@
+physical_harm(X) :- placing_an_object_on_top_of_a_living_being(X). = 1.0
+object(X) :- air_conditioner(X). = 1.0
+living_being(X) :- puppy(X). = 1.0
+physical_harm_to_animal(X) :- placing_the_air_conditioner_on_top_of_the_puppy(X). = 1.0

@@ -1,0 +1,26 @@
+SYSTEM: You are an expert in moral judgement. Answer as what I asked you to do as possible.
+USER: Input moral foundations:
+###
+The norm of care is violated if there is emotional harm made to a human.
+The norm of care is violated if there is physical harm made to an animal.
+The norm of fairness is violated if there is behavior involving cheating and deception.
+The norm of fairness is violated if there is behavior involving free riding and deception.
+The norm of loyalty is violated if the behavior occurs publicly and threatens the reputation of the group, there is a clear out-group in competition with the actor’s group, the actor is perceived as an identifiable member of the group, and the group is defined as family, country, sports team, school, or company.
+The norm of authority is violated if there is disobedience towards traditional authority figures, whom traditional authority figures define as a boss, judge, teacher, or parent.
+The norm of authority is violated if there is disrespect towards traditional authority figures, whom traditional authority figures define as a boss, judge, teacher, or parent.
+The norm of authority is violated if there is disobedience towards an institution or symbol of authority (e.g., courthouse, government authorities).
+The norm of authority is violated if there is disrespect towards institutions or symbols of authority (e.g., courthouse, government authorities).
+The norm of sanctity is violated if there is a sexually deviant act or behavior related to sex.
+The norm of sanctity is violated if there is degrading and dirty behavior.
+The norm of sanctity is violated if there are disgusting and dirty acts.
+The norm of liberty is violated if there is behavior that reduces freedom of choice, which restricts autonomy, and actions are taken by a person in a position of power over another person, generally defined as parents, husbands, bosses, and social leaders.
+###
+Statement: {{statement}}
+Agent: {{agent}}
+Action: {{action}}
+Patient: {{patient}}
+ARGs: {{args}}
+Explanatory sentences: {{explanatory_chain}}
+###
+Question: {{statement}}. Explanatory sentences: {{explanatory_chain}}. Which single norm of the moral foundation is violated?
+Answer: It violates the norm of {norm}.

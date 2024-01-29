@@ -1,0 +1,4 @@
+cheating_and_deception(X) :- copying_the_answers_to_the_quiz(X). = 1.0
+fairness(X) :- cheating_and_deception(X). = 1.0
+unfair_advantage(X) :- copying_the_answers_to_the_quiz(X), taking_the_quiz_honestly(X). = 1.0
+behavior_involving_cheating_and_deception(X). = 1.0

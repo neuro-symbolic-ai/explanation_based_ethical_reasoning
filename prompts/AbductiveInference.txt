@@ -1,0 +1,67 @@
+SYSTEM: You are an expert in ethical reasoning, explanation regeneration and natural langugage inference.
+USER: Input moral foundations:
+###
+The norm of care is violated if there is emotional harm made to a human.
+The norm of care is violated if there is physical harm made to an animal.
+The norm of fairness is violated if there is behavior involving cheating and deception.
+The norm of fairness is violated if there is behavior involving free riding and deception.
+The norm of loyalty is violated if the behavior occurs publicly and threatens the reputation of the group, there is a clear out-group in competition with the actor’s group, the actor is perceived as an identifiable member of the group, and the group is defined as family, country, sports team, school, or company.
+The norm of authority is violated if there is disobedience towards traditional authority figures, whom traditional authority figures define as a boss, judge, teacher, or parent.
+The norm of authority is violated if there is disrespect towards traditional authority figures, whom traditional authority figures define as a boss, judge, teacher, or parent.
+The norm of authority is violated if there is disobedience towards an institution or symbol of authority (e.g., courthouse, government authorities).
+The norm of authority is violated if there is disrespect towards institutions or symbols of authority (e.g., courthouse, government authorities).
+The norm of sanctity is violated if there is a sexually deviant act or behavior related to sex.
+The norm of sanctity is violated if there is degrading and dirty behavior.
+The norm of sanctity is violated if there are disgusting and dirty acts.
+The norm of liberty is violated if there is behavior that reduces freedom of choice, which restricts autonomy, and actions are taken by a person in a position of power over another person, generally defined as parents, husbands, bosses, and social leaders.
+###
+Task: Find any missing facts (explanatory sentences) that will entail the provided hypothesis. This should be based on the given explanatory sentences, the relevant input moral violations, and the provided semantic roles.
+###
+Statement: I crush the frog.
+Agents : I
+Action: crush
+Patients: the frog
+ARGs: None
+Existing explanatory sentence: Crush is compression. Compression is a pushing force.
+Hypothesis: violate_care
+Overall updated explanatory sentences: 
+1. Frogs are animals. 
+2. Crush is compression. 
+3. Compression is a pushing force. 
+4. Pushing force may cause physical harm. 
+5. There is a physical harm made to an animal.
+###
+###
+Statement: I won my match by moving my ball when the other player wasn't looking.
+Agent: I, the other player
+Action: won, moving, was, looking
+Patient: my match, my ball
+ARGs: by moving my ball when the other player was not looking, when the other player was not looking, not, when
+Existing explanatory sentence: Cheating involves deception. Deception in a match breaks the principles of fairness.  
+Hypothesis: violate_fairness
+Overall updated explanatory sentences: 
+1. Moving the ball without the other player's knowledge is a dishonest action. 
+2. Cheating involves deception. 
+3. Deception in a match breaks the principles of fairness. 
+4. Dishonesty in a competition can lead to unfair advantages. 
+5. There is a behaviour of cheating.
+###
+###
+Statement: {{statement}}
+Agent: {{agent}}
+Action: {{action}}
+Patient: {{patient}}
+ARGs: {{args}}
+Existing explanatory sentence: {{explanatory_chain}}
+Hypothesis: {{hypothesis}}
+Overall updated explanatory sentences: 
+###
+Find any missing facts (explanatory sentences) that will entail the hypothesis "{{hypothesis}}" for statement "{{statement}}" based on the existing explanatory sentence: "{{explanatory_chain}}".
+The explanatory chain should logically progress from the aforementioned semantic roles(agent, action, patient and ARGs) to the definition of the specified moral foundations input. 
+Please provide the overall updated explanatory sentences in a numbered list format. List the answers as follows:
+Overall updated explanatory sentences: 
+1.
+2.
+3.
+...
+n.

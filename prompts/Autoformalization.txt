@@ -1,0 +1,27 @@
+SYSTEM: You are an expert in Prolog language. Answer as what I asked you to do as possible.
+USER: ###
+Task: You need to transfer the natural language sentences into my Prolog format. Construct the predicates for the symbolic format based on the rules.
+###
+My Prolog only has following rules: 
+1. predicate_1(X) :- predicate_2(X). = 1.0
+2. predicate_1(X,Y) :- predicate_2(X), predicate_3(Y). = 1.0
+3. predicate_1(X) :- predicate_2(X), predicate_3(X). = 1.0
+4. predicate_1(X,Z) :- predicate_2(X,Y), predicate_3(Y,Z). = 1.0
+5. predicate_1(X). = 1.0
+
+The Prolog rules represent an implication relation. You need to transfer the sentences into the above forms as different parts of the predicates. The rule is all the predicates are in lower case. The predicate 1 is the result of predicate 2. if p1(X):- p2(X) which means p2 implies p1, p2 leads to p1.
+###
+Natural language sentences: Bleeding is a physical harm. Leaving someone bleeding in a dangerous environment can cause further physical harm and even death. Her is a human.
+Answer: 
+1. physical_harm(X) :- bleeding(X). =1.0
+2. physical_harm(X) :- leaving_someone_bledding_in_a_dangerous_environment(X). = 1.0
+3. death_leaving_someone_bledding_in_a_dangerous_environment(X). = 1.0
+4. human(X) :- her(X). =1.0
+###
+Natural language sentences: {{explanatory chain}}
+Answer: .
+Please provide the information in a numbered list format. List the answers as follows:
+1. 
+2. 
+3. 
+n. 

@@ -1,0 +1,13 @@
+{
+    "API_KEY": "OPENAI_KEY",
+    "DATA_FILE": "simple_166_foundation.csv",
+    "MAX_ITERATIONS": 5,
+    "CHAT_ENGINE": "gpt-3.5-turbo",
+    "EMBEDDING_ENGINE": "text-embedding-3-large",
+    "ENTITY_TNORM": "prod",
+    "PREDICATE_TNORM": "prod",
+    "MIN_DEPTH": "0",
+    "MIN_BS_SIZE": "0",
+    "LAMBDA_CUT": "0.13",
+    "MAX_DEPTH": "13"
+}

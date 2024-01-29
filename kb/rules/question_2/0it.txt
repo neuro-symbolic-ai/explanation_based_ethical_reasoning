@@ -1,0 +1,2 @@
+physical_harm(X) :- placing_the_air_conditioner_on_top_of_the_puppy(X). = 1.0
+animal(X) :- puppy(X). = 1.0

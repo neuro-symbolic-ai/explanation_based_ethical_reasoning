@@ -1,0 +1,6 @@
+emotional_harm ~ physical_harm = 0.8070810437202454
+physical_harm ~ physical_harm_to_animal = 0.863082766532898
+animal ~ physical_harm_to_animal = 0.6636126041412354
+emotional_harm ~ physical_harm_to_animal = 0.7014719247817993
+human ~ physical_harm_to_animal = 0.6004487872123718
+reduce_freedom ~ physical_harm_to_animal = 0.5539157390594482
