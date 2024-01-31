@@ -1,3 +1,9 @@
+"""
+This code is based on the work of L. Weber, P. Minervini, J. Münchmeyer, U. Leser, and T. Rocktäschel.
+"NLProlog: Reasoning with Weak Unification for Question Answering in Natural Language." ACL 2019, Florence, Italy.
+From: https://github.com/leonweber/nlprolog
+"""
+
 import logging
 import subprocess
 import shlex
