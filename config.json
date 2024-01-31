@@ -1,6 +1,6 @@
 {
     "API_KEY": "OPENAI_KEY",
-    "DATA_FILE": "simple_166_foundation.csv",
+    "DATA_FILE": "simple_question.csv",
     "MAX_ITERATIONS": 5,
     "CHAT_ENGINE": "gpt-3.5-turbo",
     "EMBEDDING_ENGINE": "text-embedding-3-large",
