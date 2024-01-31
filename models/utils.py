@@ -47,7 +47,6 @@ class OpenAIModel:
             embedding_b = resp['data'][1]['embedding']
 
             similarity_score = np.dot(embedding_a, embedding_b)
-
             return similarity_score
 
         except Exception as e:
